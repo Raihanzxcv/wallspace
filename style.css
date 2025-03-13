@@ -1,0 +1,95 @@
+/* Skeleton loading animation */
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+/* style.css */
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    background-color: #fefefe;
+    color: #333;
+    line-height: 1.5;
+}
+
+.simple-header {
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2rem;
+}
+
+.simple-header h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0;
+    color: #555;
+}
+
+.content-area {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wallpaper-gallery {
+    /* No specific styles here */
+}
+
+.wallpaper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr)); /* Responsive, 4 columns preferred */
+    gap: 25px;
+}
+
+.wallpaper-item {
+    background-color: #fff;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #eee;
+    transition: border-color 0.3s ease;
+    position: relative; /* Added for skeleton positioning */
+}
+
+.wallpaper-item:hover {
+    border-color: #ccc;
+}
+
+.wallpaper-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.download-link {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #777;
+    font-size: 0.9rem;
+    border-top: 1px solid #eee;
+    transition: color 0.3s ease;
+}
+
+.download-link:hover {
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+.simple-footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    color: #999;
+}
